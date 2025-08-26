@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio Can Zervv - Web Developer & Data Analyst">
+    <title>Portofolio {{ profile.nama }}</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Three.js untuk efek 3D -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <!-- Style -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Dark/Light Toggle -->
+    <div class="toggle-container">
+        <label class="toggle-switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="toggle-slider"></span>
+        </label>
+    </div>
+
+    <header>
+        <h1>{{ profile.nama }}</h1>
+        <p class="profesi">{{ profile.profesi }}</p>
+        
+
+        <!-- 3D Photo Container -->
+        <img src="{{ profile.foto }}" alt="Foto {{ profile.nama }}" class="profil-foto">
+
+        <div class="profession-box">
+        {% for profession in profile.deskripsi %}
+            <div class="profession-item">{{ profession }}</div>
+        {% endfor %}
+        </div>
+
+        <div class="sosmed">
+            {% for platform, link in profile.sosial_media.items() %}
+            <a href="{{ link }}" target="_blank">
+                {% if platform == 'LinkedIn' %}
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                {% elif platform == 'GitHub' %}
+                    <i class="fab fa-github"></i> GitHub
+                {% elif platform == 'Email' %}
+                    <i class="fas fa-envelope"></i> Email
+                {% else %}
+                    <i class="fab fa-{{ platform | lower }}"></i> {{ platform }}
+            {% endif %}
+            </a>
+            {% endfor %}
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>Free © 2025 {{ profile.nama }}</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/static/script.js"></script>
+</body>
+</html>

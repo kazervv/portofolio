@@ -1,0 +1,276 @@
+:root {
+    --primary: #00ffcc;
+    --secondary: #cc00ff;
+    --dark: #121212;
+    --light: #f8f8f8;
+    --card-bg: rgba(20, 20, 30, 0.7);
+    --border-glow: 0 0 10px var(--primary);
+}
+
+body {
+    font-family: 'Orbitron', 'Poppins', sans-serif;
+    background: var(--dark);
+    color: var(--light);
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(circle at 10% 20%, rgba(0, 255, 204, 0.1) 0%, transparent 30%),
+                      radial-gradient(circle at 90% 80%, rgba(204, 0, 255, 0.1) 0%, transparent 30%);
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 3rem 0;
+    animation: fadeIn 1.5s ease-in;
+}
+
+h1 {
+    font-size: 3.5rem;
+    background: linear-gradient(90deg, #ff00ff, #00ffff, rgb(0, 255, 204, 0.2)); /* Gradient ungu-pink-biru */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-shadow: rgba(0, 255, 204, 0.2);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.profesi {color: white;
+    margin: 8px 0;
+    font-family: 'Orbitron', sans-serif;
+    line-height: 1.6;
+    background:  #00ffcc;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 1.5rem;
+}
+
+.profil-foto {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;       /* Membuat foto bulat */
+    object-fit: cover;        /* Memastikan foto terisi penuh */
+    border: 3px solid var(--primary);  /* Border berwarna neon */
+    box-shadow: 0 0 15px var(--primary); /* Efek glow */
+    margin: 0 auto 2rem;      /* Posisi tengah dan margin bawah */
+    display: block;           /* Memastikan foto berada di tengah */
+    transition: transform 0.3s; /* Animasi saat hover */
+}
+
+.profil-foto:hover {
+    transform: scale(1.05);   /* Efek zoom saat hover */
+}
+
+.profession-box {
+    background: rgba(20, 20, 30, 0.9);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 255, 204, 0.3);
+    max-width: 500px;
+    margin: 2rem auto; /* Jarak dari foto dan sosial media */
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
+}
+
+.sosmed {
+    margin: 2rem 0;
+}
+
+.sosmed a {
+    color: var(--light);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative; /* Penting untuk efek ::after */
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.sosmed a i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+.sosmed a:hover {
+    color: var(--primary);
+}
+
+.sosmed a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px; /* Jarak underline dari teks */
+    left: 0;
+    background: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.sosmed a:hover::after {
+    width: calc(100% - 30px); /* Mengurangi lebar agar tidak melebihi ikon */
+}
+
+.projek {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.projek h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: all 0.4s;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--border-glow);
+    border-color: var(--primary);
+}
+
+.project-card h3 {
+    color: var(--primary);
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.project-card a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.project-card a::after {
+    content: '→';
+    margin-left: 8px;
+    transition: margin-left 0.3s;
+}
+
+.project-card:hover a::after {
+    margin-left: 12px;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+}
+
+/* Toggle Dark/Light Mode */
+.toggle-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .toggle-slider {
+    background-color: var(--primary);
+}
+
+input:checked + .toggle-slider:before {
+    transform: translateX(30px);
+}
+
+/* Particles Container */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Light Mode Adjustments */
+body.light-mode {
+    --dark: #f8f8f8;
+    --light: #333;
+    --card-bg: rgba(240, 240, 250, 0.8);
+    background: #f0f0f5;
+    background-image: radial-gradient(circle at 10% 20%, rgba(0, 255, 204, 0.05) 0%, transparent 30%),
+                      radial-gradient(circle at 90% 80%, rgba(204, 0, 255, 0.05) 0%, transparent 30%);
+}
+
+body.light-mode .project-card {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode h1 {
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}

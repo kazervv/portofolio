@@ -1,0 +1,2 @@
+{% extends "base.html" %}{% block content %} 
+<section class="projek"> <h2>New Projects</h2> <div class="project-list"> {% for project in projects %} <div class="project-card"> <h3>{{ project.judul }}</h3> <p>{{ project.deskripsi }}</p> <a href="{{ project.link }}">See More →</a> </div> {% endfor %} </div> </section> {% endblock %}
