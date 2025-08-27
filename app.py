@@ -7,7 +7,7 @@ PROFILE = {
     "nama": "Can Zervv",
     "profesi": "The Power of CTRL+C CTRL+V",
     "deskripsi": [
-        "Make A Web with AI, JUst Prompt it, Collected the Script",
+        "Make A Web with AI, Just Prompt it, Collected the Script",
         "AI-Powered Developer, Instant Coding",
         "No Code, Just Copy-Paste Coder"
     ],
