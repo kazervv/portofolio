@@ -17,21 +17,6 @@ A personal portfolio website built using Flask, a micro-web framework for Python
 
 ---
 
-## 📂 Project Structure
-
-portfolio/
-│── static/
-│ ├── profile.jpg # Profile photo
-│ ├── style.css # Styling file
-│ └── script.js # JavaScript file (if any)
-│── templates/
-│ ├── base.html # Base template
-│ └── index.html # Home page
-│── app.py # Flask application
-└── requirements.txt # Project dependencies
-
----
-
 ## 🚀 How to Run a Project Locally
 
 1. **Clone this repository:**
