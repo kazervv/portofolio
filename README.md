@@ -71,10 +71,9 @@ If you would like to contribute or provide suggestions, please open an issue or 
 This project is licensed under the MIT License.
 
 📬 Contact
-If you have any questions or would like to collaborate, please contact me via:
-
-Email: cyanervv@gmail.com
-GitHub: github.com/kazervv
+If you have any questions, please contact me via:
+X: https://x.com/RocZelv/ (SlowRespond)
+Email: cyannervv@gmail.com
 
 ---
 
