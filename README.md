@@ -21,7 +21,7 @@ A personal portfolio website built using Flask, a micro-web framework for Python
 
 1. **Clone this repository:**
 2. 0ne by one
-```bash
+
 git clone https://github.com/username/portofolio.git
 cd portfolio
 python -m venv venv
