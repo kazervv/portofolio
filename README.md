@@ -2,8 +2,6 @@
 
 A personal portfolio website built using Flask, a micro-web framework for Python. This website displays personal information, skills, and links to social media profiles.
 
-🔗 **Demo:** [https://cyann.pythonanywhere.com](https://cyann.pythonanywhere.com) unactived
-
 ---
 
 ## 🛠 Technologies Used
@@ -21,14 +19,19 @@ A personal portfolio website built using Flask, a micro-web framework for Python
 
 1. **Clone this repository:**
 
---bash
+
 git clone https://github.com/username/portofolio.git
+
 cd portfolio
+
 python -m venv venv
-source venv/bin/activate # Linux/Mac
-venv\Scripts\activate # Windows
+
+source venv/bin/activate #forLinux/Mac
+
+venv\Scripts\activate #forWindows
+
 pip install -r requirements.txt
---/bash
+
 
 ## How to Deploy to PythonAnywhere
 
@@ -68,7 +71,7 @@ Responsive Layout: To display well on all devices.
 If you would like to contribute or provide suggestions, please open an issue or pull request in this repository. All feedback is greatly appreciated!
 
 📜 License
-This project is licensed under the MIT License.
+This project is Free licensed.
 
 📬 Contact
 If you have any questions, please contact me via:
@@ -76,22 +79,3 @@ X: https://x.com/RocZelv/ (SlowRespond)
 Email: cyannervv@gmail.com
 
 ---
-
-### **Usage Guide:**
-
-1. **Replace Placeholders:**
-- Replace `username` with your GitHub and PythonAnywhere username.
-- Replace the demo URL with your website URL.
-- Replace screenshot with a real screenshot of your website.
-- Replace contact information with your information.
-
-2. **Add Screenshot:**
-- Upload a screenshot of your website to your GitHub repository.
-- Replace the screenshot placeholder URL with the URL of the uploaded image.
-
-3. **Add License File:**
-- Create a `LICENSE` file in your repository and fill it with the MIT license text.
-
----
-
-This `README.md` will help anyone visiting your GitHub repository understand the project's purpose, the technologies used, and how to run or deploy it. 😊
