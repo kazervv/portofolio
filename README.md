@@ -1,4 +1,4 @@
-#Personal Portfolio with Flask
+# Personal Portfolio with Flask
 
 A personal portfolio website built using Flask, a micro-web framework for Python. This website displays personal information, skills, and links to social media profiles.
 
