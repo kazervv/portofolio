@@ -20,15 +20,15 @@ A personal portfolio website built using Flask, a micro-web framework for Python
 ## 🚀 How to Run a Project Locally
 
 1. **Clone this repository:**
-2. 0ne by one
 
+--bash
 git clone https://github.com/username/portofolio.git
 cd portfolio
 python -m venv venv
 source venv/bin/activate # Linux/Mac
 venv\Scripts\activate # Windows
 pip install -r requirements.txt
-
+--/bash
 
 ## How to Deploy to PythonAnywhere
 
