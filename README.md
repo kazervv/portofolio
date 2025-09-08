@@ -87,6 +87,6 @@ Social Media Links: Links to LinkedIn and GitHub.
   
   X: https://x.com/RocZelv/ (SlowRespond)
   
-  Email: cyannervv@gmail.com
+  Email: reat5753@gmail.com
 
 ---
