@@ -2,7 +2,7 @@
 
 A personal portfolio website built using Flask, a micro-web framework for Python. This website displays personal information, skills, and links to social media profiles.
 
-🔗 **Demo:** [https://cyann.pythonanywhere.com](https://cyann.pythonanywhere.com) active until 27 November 2025, toggle dark/light ERROR
+🔗 **Demo:** [https://cyann.pythonanywhere.com](https://cyann.pythonanywhere.com) unactived
 
 ---
 
