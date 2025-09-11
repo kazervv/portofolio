@@ -19,20 +19,24 @@ A personal portfolio website built using Flask, a micro-web framework for Python
 
 1. **Clone this repository:**
 
-  '''bash
+  ```bash
   git clone https://github.com/kazervv/portofolio.git
-  '''
-  
+  ```
+  ```bash
   cd portfolio
-  
+  ```
+  ```bash
   python -m venv venv
-  
+  ```
+  ```bash
   source venv/bin/activate #forLinux/Mac
-  
+  ```
+  ```bash
   venv\Scripts\activate #forWindows
-  
+  ```
+  ```bash
   pip install -r requirements.txt
-
+  ```
 ---
 
 ## How to Deploy to PythonAnywhere
