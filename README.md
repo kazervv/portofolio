@@ -80,18 +80,4 @@ Social Media Links: Links to LinkedIn and GitHub.
   Simple Animations: For more lively interactions.
   
   Responsive Layout: To display well on all devices.
-  
-  🤝 Contributions
-  If you would like to contribute or provide suggestions, please open an issue or pull request in this repository. All feedback is greatly appreciated!
-  
-  📜 License
-  This project is Free licensed.
 
-# 📬 Contact
-  If you have any questions, please contact me via:
-  
-  X: https://x.com/RocZelv/ (SlowRespond)
-  
-  Email: reat5753@gmail.com
-
----
